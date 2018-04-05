@@ -8,7 +8,7 @@ build:
   steps:
     - pip-install:
         requirements_file: "requirements.test.txt"
-  script:
-    name: python unit tests
-    code: |
-      pytest -s
+    - script:
+        name: python unit tests
+        code: |
+          pytest -s
