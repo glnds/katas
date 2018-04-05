@@ -1,5 +1,8 @@
 class Game(object):
 
+    def __init__(self):
+        self._score = 0
+
     def roll(self, fallen_pins):
         self._score = fallen_pins
 
