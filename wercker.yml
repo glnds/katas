@@ -8,7 +8,7 @@ box:
 build:
   steps:
     - pip-install:
-        requirements_file: "requirements.test.txt"
+        requirements_file: "requirements.txt"
     - script:
         name: python unit tests
         code: |
