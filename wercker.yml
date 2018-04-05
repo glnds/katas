@@ -1,0 +1,14 @@
+---
+box:
+  id: python:3.6-slim
+  ports:
+    - "5000"
+
+build:
+  steps:
+    - pip-install:
+        requirements_file: "requirements.test.txt"
+  script:
+    name: python unit tests
+    code: |
+      pytest -s
