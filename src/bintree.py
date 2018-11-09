@@ -1,6 +1,5 @@
 
 
-# define a class
 class Treenode:
     def __init__(self, value, left, right):
         self.value = value
