@@ -40,5 +40,5 @@ def test_multiple_nodes():
         11, Treenode(40, Treenode(12, None, None), Treenode(50, None, None)), None)
     ) == 2
 
-    # Let's put it that way for the algorithm in my head this is the expected result :)
+    # Let's put it that way: for the algorithm in my head this is the expected result :)
     assert get_visible_nodes(root) == 5
