@@ -51,13 +51,13 @@ class TestBowlingGame(unittest.TestCase):
 
     #     assert self.game.score == 39
 
-    def test_throw_two_strikes(self):
-        self.throw_strike()
-        self.throw_strike()
-        self.game.roll(5)
-        self.game.roll(4)
+    # def test_throw_two_strikes(self):
+    #     self.throw_strike()
+    #     self.throw_strike()
+    #     self.game.roll(5)
+    #     self.game.roll(4)
 
-        assert self.game.score == 53
+    #     assert self.game.score == 53
 
     # def test_gutter_game(self):
     #     for i in range(20):
@@ -65,8 +65,8 @@ class TestBowlingGame(unittest.TestCase):
 
     #     assert self.game.score == 0
 
-    def test_perfect_game(self):
-        for i in range(10):
-            self.throw_strike()
+    # def test_perfect_game(self):
+    #     for i in range(10):
+    #         self.throw_strike()
 
-        assert self.game.score == 300
+    #     assert self.game.score == 300

@@ -1,6 +1,0 @@
-pip-tools
-flake8
-autopep8
-pytest
-pytest-pythonpath
-pytest-watch
