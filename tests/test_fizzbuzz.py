@@ -22,10 +22,10 @@ def test_fizzbuzz_1_to_10(some_number, output):
 
 @pytest.mark.parametrize(
     'some_number, output', [
-        (3*5, 'fizzbuzz'),
-        (3*7, 'fizzbar'),
-        (5*7, 'buzzbar'),
-        (3*5*7, 'fizzbuzzbar'),
+        (3 * 5, 'fizzbuzz'),
+        (3 * 7, 'fizzbar'),
+        (5 * 7, 'buzzbar'),
+        (3 * 5 * 7, 'fizzbuzzbar'),
     ]
 )
 def test_fizzbuzz_contenated_words(some_number, output):

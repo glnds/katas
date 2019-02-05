@@ -36,18 +36,17 @@ class Game(object):
 
     def _get_strike_bonus(self, index):
         bonus = 0
-        if index+1 < len(self._frames):
-            bonus += self._frames[index+1].sum
-            if (self._frames[index+1].is_strike
-                    and index+2 < len(self._frames)
-                    and self._frames[index+2].first_roll):
-                bonus += self._frames[index+2].first_roll
+        if index + 1 < len(self._frames):
+            bonus += self._frames[index + 1].sum
+            if (self._frames[index + 1].is_strike and index + 2 < len(self._frames) and
+                    self._frames[index + 2].first_roll):
+                bonus += self._frames[index + 2].first_roll
         return bonus
 
     def _get_spare_bonus(self, index):
         bonus = 0
-        if index+1 < len(self._frames):
-            bonus += self._frames[index+1].first_roll
+        if index + 1 < len(self._frames):
+            bonus += self._frames[index + 1].first_roll
         return bonus
 
 
